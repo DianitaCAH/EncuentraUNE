@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EncuentraUNE</string>
+    <string name="hello_world">Busqueda, seleccion y asignacion de nombres a objetos</string>
+    <string name="action_settings">Salir</string>
+
+    <string name="subtitulo">Ing Electronica</string>
+    <string name="BT_visible">BT visible</string>
+    <string name="publicar">PUBLICAR</string>
+    <string name="BT_buscar_dispositivos">BUSCAR DISPOSITIVOS</string>
+    <string name="ubicar_dispositivos">UBICACION DE LOS DISPOSITIVOS</string>
+    <string name="mostrar_isp">MOSTRAR LOS ISP DISPONIBLES</string>
+    <string name="actualizar_localizacion">ACTUALIZACION DE COORDENADAS DE UBICACION</string>
+    <string name="name_device">Nombre: </string>
+    <string name="mcADD_device">Mac ID: </string>
+    <string name="lblnew_name_device">NOMBRE DEL DISPOSITIVO</string>
+    <string name="lbl_mcAdd_devicemsg">Direccion MAC:</string>
+    <string name="BTconectando_a_disp">Tomando coordenadas del </string>
+
+
+    <string name="msg_cambio_name_device">ASIGNACION DE NOMBRES A DISPOSITIVOS</string>
+
+
+</resources>
