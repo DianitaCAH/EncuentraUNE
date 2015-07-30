@@ -8,7 +8,7 @@
     <string name="publicar">PUBLICAR</string>
     <string name="BT_buscar_dispositivos">BUSCAR DISPOSITIVOS</string>
     <string name="ubicar_dispositivos">UBICACION DE LOS DISPOSITIVOS</string>
-    <string name="mostrar_isp">MOSTRAR LOS ISP DISPONIBLES</string>
+    <string name="mostrar_isp">MOSTRAR LOS DISPOSITIVOS DISPONIBLES</string>
     <string name="actualizar_localizacion">ACTUALIZACION DE COORDENADAS DE UBICACION</string>
     <string name="name_device">Nombre: </string>
     <string name="mcADD_device">Mac ID: </string>

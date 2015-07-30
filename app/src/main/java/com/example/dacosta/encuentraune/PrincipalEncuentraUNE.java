@@ -104,8 +104,6 @@ public class PrincipalEncuentraUNE extends FragmentActivity implements
                     }else {
                         gps_long = Loc.getLocacion().getLongitude();
                         gps_lat = Loc.getLocacion().getLatitude();
-                        //Toast.makeText(getActivity(), "Latitud GPS:" + gps_lat + ", Longitud GPS:" +
-                        // gps_long, Toast.LENGTH_LONG).show();
                     }
                 d.setLatitude(String.valueOf(gps_long));
                 d.setLongitude(String.valueOf(gps_lat));

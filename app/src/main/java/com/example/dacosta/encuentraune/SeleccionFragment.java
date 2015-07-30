@@ -40,10 +40,6 @@ public class SeleccionFragment extends Fragment implements LocationListener {
     View rootView;
 
     protected static final int DISCOVERY_REQUEST = 0;
-    private static final int REQUEST_CONNECT_DEVICE = 1;
-    private static final int REQUEST_ENABLE_BT = 2;
-    private ProgressDialog mBluetoothConnectProgressDialog;
-    ArrayAdapter<String> adapter,detectedAdapter;
     ArrayList<BluetoothDevice> arrayListPairedBluetoothDevices, arrayListBluetoothDevices;
     ArrayList<Devices> arrayListpaired;
     //ArrayList<String> arrayListpaired;
@@ -112,45 +108,8 @@ public class SeleccionFragment extends Fragment implements LocationListener {
         DeviceAdapter adapter = new DeviceAdapter(getActivity(),arrayListpaired);
         listViewDetected.setAdapter(adapter);
         adapter.notifyDataSetChanged();
-        //Toast.makeText(getActivity(), "cargo lista FRAGMENT1", Toast.LENGTH_SHORT).show();
         Log.e("PairedDevices", String.valueOf(arrayListpaired.size()));
-        /*double gps_long = 0, gps_lat = 0;
-        arrayListpaired = new ArrayList<Devices>();
-        ListView listViewDetected = (ListView)rootView.findViewById(R.id.DeviceList);
-        DeviceAdapter adapter = new DeviceAdapter(getActivity(),arrayListpaired);
-        listViewDetected.setAdapter(adapter);
-        Set<BluetoothDevice> pairedDevice = bluetoothAdapter.getBondedDevices();
-        if(pairedDevice.size() > 0)  {
-            for(BluetoothDevice bDevice : pairedDevice){
-                //arrayListpaired.add(bDevice.getName()+"\n"+bDevice.getAddress());
-                //arrayListPairedBluetoothDevices.add(bDevice);
-                Devices d = new Devices();
-                d.setName(bDevice.getName());
-                d.setMacAddress(bDevice.getAddress());
-                //Toma de coordenadas
-                GPS_Datos GPS = new GPS_Datos(getActivity());
-                Loc = GPS.PrenderGPS();
-                if (Loc.getLocationManager() != null)
-                    if (Loc.isPorGPS()) {
-                        Loc.getLocationManager().requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
-                        this.onLocationChanged(Loc.getLocacion());
-                    }else {
-                        gps_long = Loc.getLocacion().getLongitude();
-                        gps_lat = Loc.getLocacion().getLatitude();
-                        //Toast.makeText(getActivity(), "Latitud GPS:" + gps_lat + ", Longitud GPS:" +
-                        // gps_long, Toast.LENGTH_LONG).show();
-                    }
-                d.setLatitude(String.valueOf(gps_long));
-                d.setLongitude(String.valueOf(gps_lat));
-                arrayListpaired.add(d);
-            }
-            adapter.notifyDataSetChanged();
 
-            Log.e("PairedDevices", String.valueOf(pairedDevice.size()));
-        }else {
-            Toast.makeText(getActivity(), "busco algo", Toast.LENGTH_SHORT).show();
-            Log.e("noPairedDevices", String.valueOf(pairedDevice.size()));
-        }*/
     }
 
 
